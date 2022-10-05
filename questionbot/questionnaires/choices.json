@@ -17,15 +17,15 @@
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "*this is plain_text text*",
+							"text": "CORRECT",
 							"emoji": true
 						},
-						"value": "value-0"
+						"value": "correct"
 					},
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "*this is plain_text text*",
+							"text": "BLAME",
 							"emoji": true
 						},
 						"value": "value-1"
@@ -33,7 +33,7 @@
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "*this is plain_text text*",
+							"text": "JAME",
 							"emoji": true
 						},
 						"value": "value-2"
