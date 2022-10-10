@@ -1,0 +1,31 @@
+{
+    "title": "Samples Questions",
+    "tags": [
+        "sample", "south"
+    ],
+    "questions": [
+        {
+            "question_text": "What's your favorite color?",
+            "tags": [
+                "sample",
+                "south"
+            ],
+            "weight": 1,
+            "answers_any_or_all": [
+                "red"
+            ],
+            "answers_and_or_xor": "xor",
+            "answers": [
+                {
+                    "text": "red",
+                    "value": "red"
+                },
+                {
+                    "text": "blue",
+                    "value": "blue"
+                }
+            ]
+        }
+    ]
+    
+}
