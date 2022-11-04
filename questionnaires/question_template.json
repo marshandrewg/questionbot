@@ -1,0 +1,54 @@
+{
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "What's Bandwidth's stock ticker?"
+			},
+			"accessory": {
+				"type": "multi_static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "BLAND",
+							"emoji": true
+						},
+						"value": "correct"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "BRAND",
+							"emoji": true
+						},
+						"value": "value-1"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "BRAN ",
+							"emoji": true
+						},
+						"value": "value-2"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "BAND ",
+							"emoji": true
+						},
+						"value": "value-2"
+					}
+				],
+				"action_id": "multi_static_select-action"
+			}
+		}
+	]
+}
