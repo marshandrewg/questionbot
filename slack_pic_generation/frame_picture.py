@@ -16,24 +16,26 @@ background = ImageOps.pad(background, (h,w), color='#FFFFFF', centering=(0.5,0.5
 
 from PIL import Image, ImageOps
 # A list of the frames to be outputted
-frames = []
-# Loop over each frame in the animated image
-for frame in ImageSequence.Iterator(foreground):
-    # Draw the text on the frame
-    # frame.show()
-    # com1 = Image.alpha_composite(frame, foreground)
-    frame.convert("RGBA")
-    frame.save("test2.png", format="png")
+def animate_foreground(background, foreground):
+        
+    frames = []
+    # Loop over each frame in the animated image
+    for frame in ImageSequence.Iterator(foreground):
+        # Draw the text on the frame
+        # frame.show()
+        # com1 = Image.alpha_composite(frame, foreground)
+        frame.convert("RGBA")
+        frame.save("test2.png", format="png")
 
-    # NEEDS CONVERT RGBA
-    framePng = Image.open('test2.png').convert("RGBA")
+        # NEEDS CONVERT RGBA
+        framePng = Image.open('test2.png').convert("RGBA")
 
-    h,w = framePng.size
-    background_copy = background.copy()
-    background_copy.paste(framePng, mask=framePng)
-    # framePng.paste(foreground, mask=framePng)
+        h,w = framePng.size
+        background_copy = background.copy()
+        background_copy.paste(framePng, mask=framePng)
+        # framePng.paste(foreground, mask=framePng)
 
-    background_copy.save('test3.png')
-    frames.append(background_copy)
-# Save the frames as a new image
-frames[0].save('out.gif', save_all=True, append_images=frames[1:], loop=0)
+        background_copy.save('test3.png')
+        frames.append(background_copy)
+    # Save the frames as a new image
+    frames[0].save('out.gif', save_all=True, append_images=frames[1:], loop=0)
