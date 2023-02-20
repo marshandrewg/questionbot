@@ -179,3 +179,13 @@ Need help? Join [Bot Developer Hangout](http://dev4slack.xoxco.com/) and talk to
 
 
 You can also create an Issue right here on [GitHub](https://github.com/slackapi/python-message-menu-example/issues).
+
+TODO:
+
+Things that have been done 
+    Got schema forking for questionnaire / question / question choices
+
+Got endpoint for adding questionnaire working
+    + Need 'plumbing' class to save the new questionnaire to a file or DB
+    + Need GET endpoint for questionnaire & file
+        + Slack utility can GET questionnaire, load it in and send to slack
